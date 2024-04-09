@@ -11,6 +11,7 @@ addVideosToList = function(videos, listItemId = "video-list") {
         videoList.append(videoItem);
 
         var videoLink = document.createElement('a');
+        videoLink.className = "video-link";
         videoLink.href = "watch.html?id=" + video.id;
         videoItem.append(videoLink);
 
