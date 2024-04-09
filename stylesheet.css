@@ -22,6 +22,7 @@ h1 {
 }
 
 .video-list-item {
+    max-width: 200px;
 }
 
 .video-thumbnail {
