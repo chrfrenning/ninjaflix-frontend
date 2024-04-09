@@ -15,6 +15,7 @@ setupVideo = function() {
 
         let videoContainer = document.getElementById('video-container');
         videoElement = document.createElement('video');
+        videoElement.id = 'video';
         videoElement.src = `${baseUrl}videos/${id}.mp4`;
         videoElement.autoplay = false;
         videoElement.controls = true;
