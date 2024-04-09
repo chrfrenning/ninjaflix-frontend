@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NinjaFlix | Insert Title Slogan Here</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="common.js"></script>
     <script src="watch.js"></script>
@@ -11,7 +12,13 @@
     
     <h1 id="video-title"></h1>
 
-    <div id="video-container" />
+    <div id="video-container"></div>
+
+    <div id="like-dislike-container">
+        <button id="like-button" onclick="likeVideo()"><i class="fa-solid fa-thumbs-up"></i>(<span id="like-count"></span>)</button>
+        <button id="dislike-button" onclick="dislikeVideo()"><i class="fa-solid fa-thumbs-down"> (<span id="dislike-count"></span>)</i></button>
+        <button id="favorite-button" onclick="favoriteVideo()"><i id="favorite-icon" class="fa-heart"></i></button>
+    </div>
         
 </body>
 </html>
