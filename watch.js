@@ -76,6 +76,19 @@ favoriteVideo = function() {
     saveFavLikeDisState(currentVideo.id, true, false, false);
 };
 
+bookmarkVideo = function() {
+    // update the bookmark icon
+    let bookmarkIcon = document.getElementById('bookmark-icon');
+    if (bookmarkIcon.classList.contains('fa-regular')) {
+        bookmarkIcon.classList.remove('fa-regular');
+        bookmarkIcon.classList.add('fa-solid');
+    } else {
+        bookmarkIcon.classList.remove('fa-solid');
+        bookmarkIcon.classList.add('fa-regular');
+    }
+    // TODO: Need backend support for bookmarks
+};
+
 document.addEventListener("DOMContentLoaded", function() {
     init().then(function() {
         setupVideo();
