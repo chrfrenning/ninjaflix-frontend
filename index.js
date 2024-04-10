@@ -2,7 +2,7 @@
 
 addVideosToList = function(videos, listItemId = "video-list") {
     var videoList = document.getElementById(listItemId);
-    videoList.children = [];
+    videoList.innerHTML = '';
 
     for (var i = 0; i < videos.length; i++) {
         var video = videos[i];
@@ -26,6 +26,15 @@ addVideosToList = function(videos, listItemId = "video-list") {
         videoLink.append(videoThumbnail);
         videoLink.append(videoTitle);
     }
+}
+
+onSearchVideos = function() {
+    var searchInput = document.getElementById('search-box');
+    var query = searchInput.value;
+
+    searchVideos(query).then(function(videos) {
+        addVideosToList(videos);
+    });
 }
 
 document.addEventListener("DOMContentLoaded", function() {

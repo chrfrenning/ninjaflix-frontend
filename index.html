@@ -10,6 +10,13 @@
 </head>
 <body>
     <h1>NinjaFlix</h1>
+
+    <form id="search-form">
+        <input type="search" id="search-box" placeholder="Search for videos..." oninput="onSearchVideos(event.target.value)">
+    </form>
+
+    
+
     <ul id="video-list" class="video-list"></ul>
 </body>
 </html>
