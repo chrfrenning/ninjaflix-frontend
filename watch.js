@@ -62,6 +62,9 @@ dislikeVideo = function() {
 };
 
 favoriteVideo = function() {
+    // toggle favorite state
+    video.favorite = !video.favorite;
+
     // update the favorite icon
     let favoriteIcon = document.getElementById('favorite-icon');
     if (favoriteIcon.classList.contains('fa-regular')) {
@@ -77,6 +80,9 @@ favoriteVideo = function() {
 };
 
 bookmarkVideo = function() {
+    // toggle bookmark state
+    currentVideo.bookmarked = !currentVideo.bookmarked;
+
     // update the bookmark icon
     let bookmarkIcon = document.getElementById('bookmark-icon');
     if (bookmarkIcon.classList.contains('fa-regular')) {
@@ -86,6 +92,7 @@ bookmarkVideo = function() {
         bookmarkIcon.classList.remove('fa-solid');
         bookmarkIcon.classList.add('fa-regular');
     }
+    
     // TODO: Need backend support for bookmarks
 };
 

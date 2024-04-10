@@ -16,12 +16,9 @@ let latencySimulation = 500;
  */
 
 saveFavLikeDisState = function(id, favorite, like, dislike) {
+    console.log("likedisfav");
     return new Promise((resolve, reject) => {
         getVideoInfo(id).then(function(video) {
-            if (like) video.likes++;
-            if (dislike) video.dislikes++;
-            if (favorite) video.favorite = !video.favorite;
-
             // delay to simulate backend
             setTimeout(function() {
                 saveVideoStateToLocalStorage(video);
