@@ -45,6 +45,35 @@ likeVideo = function() {
 
     // save it for next time
     saveFavLikeDisState(currentVideo.id, false, true, false);
+
+    return false;
+};
+
+dislikeVideo = function() {
+    // update the number of dislikes
+    currentVideo.dislikes++;
+
+    // show it to the user
+    let dislikeCount = document.getElementById('dislike-count');
+    dislikeCount.innerText = `${currentVideo.dislikes}`;
+
+    // save it for next time
+    saveFavLikeDisState(currentVideo.id, false, false, true);
+};
+
+favoriteVideo = function() {
+    // update the favorite icon
+    let favoriteIcon = document.getElementById('favorite-icon');
+    if (favoriteIcon.classList.contains('fa-regular')) {
+        favoriteIcon.classList.remove('fa-regular');
+        favoriteIcon.classList.add('fa-solid');
+    } else {
+        favoriteIcon.classList.remove('fa-solid');
+        favoriteIcon.classList.add('fa-regular');
+    }
+
+    // save it for next time
+    saveFavLikeDisState(currentVideo.id, true, false, false);
 };
 
 document.addEventListener("DOMContentLoaded", function() {
