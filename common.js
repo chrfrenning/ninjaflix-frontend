@@ -3,7 +3,7 @@
 let databaseUrl = "/database.json";
 let baseUrl = "https://chphno.blob.core.windows.net/ninjaflix/";
 let videos = [];
-let latencySimulation = 500;
+let latencySimulation = 100;
 
 
 
@@ -16,11 +16,23 @@ let latencySimulation = 500;
  */
 
 saveFavLikeDisState = function(id, favorite, like, dislike) {
-    console.log("likedisfav");
     return new Promise((resolve, reject) => {
         getVideoInfo(id).then(function(video) {
             // delay to simulate backend
             setTimeout(function() {
+                saveVideoStateToLocalStorage(video);
+                resolve(video);
+            }, latencySimulation);
+        });
+    });
+}
+
+saveBookmark = function(id, bookmark) {
+    return new Promise((resolve, reject) => {
+        getVideoInfo(id).then(function(video) {
+            // delay to simulate backend
+            setTimeout(function() {
+                video.bookmarked = bookmark;
                 saveVideoStateToLocalStorage(video);
                 resolve(video);
             }, latencySimulation);
@@ -78,6 +90,8 @@ initExtendedVideoProperties = function(videos) {
         video.likes = 0;
         video.dislikes = 0;
         video.favorite = false;
+        video.bookmarked = false;
+        video.genre = "anime";
     });
 }
 
@@ -113,3 +127,24 @@ searchVideos = function(query) {
     });
 }
 
+listBookmarkedVideos = function() {
+    return new Promise((resolve, reject) => {
+        listVideos().then(function(videos) {
+            let results = videos.filter(video => video.bookmarked);
+            let firstFive = results.slice(0, 3);
+            resolve(firstFive);
+        });
+    });
+}
+
+listRecommendedVideos = function(id) {
+    return new Promise((resolve, reject) => {
+        getVideoInfo(id).then(function(video) {
+            listVideos().then(function(videos) {
+                let results = videos.filter(v => v.id != id && v.genre === video.genre);
+                let randomVideos = results.sort(() => 0.5 - Math.random()).slice(0, 3);
+                resolve(randomVideos);
+            });
+        });
+    });
+}
