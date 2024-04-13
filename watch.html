@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NinjaFlix | Insert Title Slogan Here</title>
@@ -8,18 +9,35 @@
     <script src="common.js"></script>
     <script src="watch.js"></script>
 </head>
+
 <body>
-    
+
     <h1 id="video-title"></h1>
 
     <div id="video-container"></div>
 
     <div id="reactions-container">
-        <button id="like-button" onclick="likeVideo()"><i class="fa-solid fa-thumbs-up"></i>(<span id="like-count"></span>)</button>
-        <button id="dislike-button" onclick="dislikeVideo()"><i class="fa-solid fa-thumbs-down"></i>(<span id="dislike-count"></span>)</button>
+        <button id="like-button" onclick="likeVideo()"><i class="fa-solid fa-thumbs-up"></i>(<span
+                id="like-count"></span>)</button>
+        <button id="dislike-button" onclick="dislikeVideo()"><i class="fa-solid fa-thumbs-down"></i>(<span
+                id="dislike-count"></span>)</button>
         <button id="favorite-button" onclick="favoriteVideo()"><i id="favorite-icon" class="fa-heart"></i></button>
-        <button id="bookmark-button" onclick="bookmarkVideo()"><i id="bookmark-icon" class="fa-regular fa-bookmark"></i></button>
+        <button id="bookmark-button" onclick="bookmarkVideo()"><i id="bookmark-icon"
+                class="fa-regular fa-bookmark"></i></button>
     </div>
-        
+    <button onclick="window.location.href = 'index.html'">Home</button>
+
+    <div>
+        <h2>Recommended</h2>
+        <ul id="video-list-recommended" class="video-list"></ul>
+    </div>
+
+    <div>
+        <h2>Watch later</h2>
+        <ul id="video-list-saved" class="video-list"></ul>
+    </div>
+   
+
 </body>
+
 </html>
