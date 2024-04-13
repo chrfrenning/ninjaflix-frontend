@@ -32,6 +32,42 @@ setupVideo = function() {
         } else {
             favoriteIcon.classList.add('fa-regular');
         }
+
+        let bookmarkIcon = document.getElementById('bookmark-icon');
+        if (video.bookmarked) {
+            bookmarkIcon.classList.add('fa-solid');
+        } else {
+            bookmarkIcon.classList.add('fa-regular');
+        }
+
+        listRecommendedVideos(video.id).then(function(videos) {
+            createVideoRow(videos, 'recommended-videos-container');
+        });
+
+        listBookmarkedVideos().then(function(videos) {
+            createVideoRow(videos, 'bookmarked-videos-container');
+        });
+    });
+};
+
+createVideoRow = function(videos, containerId) {
+    let container = document.getElementById(containerId);
+
+    videos.forEach(video => {
+        let videoElement = document.createElement('li');
+        videoElement.classList.add('video-list-item');
+        container.append(videoElement);
+
+        let videoLink = document.createElement('a');
+        videoLink.classList.add('video-link');
+        videoLink.href = `watch.html?id=${video.id}`;
+        videoLink.title = video.title;
+        videoElement.append(videoLink);
+
+        let videoThumbnail = document.createElement('img');
+        videoThumbnail.src = `${baseUrl}thumbnails/${video.id}.jpg`;
+        videoThumbnail.classList.add('video-thumbnail');
+        videoLink.append(videoThumbnail);
     });
 };
 
@@ -88,12 +124,14 @@ bookmarkVideo = function() {
     if (bookmarkIcon.classList.contains('fa-regular')) {
         bookmarkIcon.classList.remove('fa-regular');
         bookmarkIcon.classList.add('fa-solid');
+
+        saveBookmark(currentVideo.id, true);
     } else {
         bookmarkIcon.classList.remove('fa-solid');
         bookmarkIcon.classList.add('fa-regular');
+
+        saveBookmark(currentVideo.id, false);
     }
-    
-    // TODO: Need backend support for bookmarks
 };
 
 document.addEventListener("DOMContentLoaded", function() {
