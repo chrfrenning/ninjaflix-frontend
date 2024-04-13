@@ -43,3 +43,38 @@ Starter på nytt med ny oppgave
 Veiledning til prosjektledelse
 Min plan for arbeidet er:
 Hva er planen for animasjoner
+
+## Logg
+### Uke 15
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Monday   | Re-started my task and started planning what to do this week. |
+| Tuesday  | Made a mood board.                        |
+| Wednesday| Started learning how to use Figma for making a prototype of the website. |
+| Thursday | Started making the prototype.              |
+| Friday   |                                          |
+
+#### Why I restarted my task:
+I restarted my task because I had no motivation for the helping website for Kuben students and it sounded a lot more exciting to start on the streaming website instead.
+
+### Uke 16
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Saturday |   Fixed recommended and watch later lists in code, mostly finished figma phone prototype|
+| Sunday   |  Plan for sunday: add logo, revie fonts, tweak design|
+| Monday   |  |
+| Tuesday  |  |
+| Wednesday|  |
+| Thursday |  |
+| Friday   |  |
+
+### Uke ..
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Saturday |                                          |
+| Sunday   |                                          |
+| Monday   |  |
+| Tuesday  |                        |
+| Wednesday|  |
+| Thursday |              |
+| Friday   |  |
