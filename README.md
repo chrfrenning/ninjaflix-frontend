@@ -33,8 +33,11 @@
 
 Mine læringsmål for dette prosjektet er:
 
-- 1
-- 2
+1. Planlegge prosjektet og jobbe jevnt fram mot deadline
+1. Å planlegge og gjennomføre brukertesting
+1. Lære hvordan man bruker figma til interaktive prototyper
+1. Lage en bra og forståelig kode
+1. Jobbe tett med mentor. Og be ofte om tilbakemeldinger til prosjektet.
 
 ## Planlegging
 
@@ -43,6 +46,33 @@ Starter på nytt med ny oppgave
 Veiledning til prosjektledelse
 Min plan for arbeidet er:
 Hva er planen for animasjoner
+
+## Brukertesting
+Dette er en liste over viktige funksjoner:
+- Se på anime
+- Oppdage ny og spennende anime
+- Spare anime man vil se til senenre
+- Kunne fortsette på en anime og starte på samme sted selv om man måtte lukke tjenester
+- Få gode anbefalinger 
+- Finne anime enkelt i søk funksjonen
+
+## Backend 
+Jeg ville fokusere på frontend kodingen og designet og trengte hjelp til backend. Jeg fikk hjelp hjemme til å lage en prototype for en tenkt backend, denne koden finnes i `common.js`. Vi lastet ned en del filmer fra YouTube, lagde thumbnails av dem og lagret dem i skyen. 
+
+## Nettverk
+Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. [Prosjektet kan ses her.](https://github.com/chrfrenning/ninjaflix-frontend)
+
+Jeg fikk hjelp til å publisere nettstedet på Azure websites. [Prosjektet kan testes her.](https://ninjaflix.no/) Vi kjøpte også domene Ninjaflix.no på Domeneshop. 
+
+TODO: publisere på skolens nettverk.
+
+TODO: Flytte ninjaflix.no pekeren til min egen Azure
+
+
+## Spærsmål til mentor
+- Hvordan levere figma prosjektet? Ta screenshots og URL i rapporten?
+- Spør: Ludvik om nettverk
+
 
 ## Logg
 ### Uke 15
@@ -65,16 +95,28 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Monday   |  Made figma prototype interactive|
 | Tuesday  |  Made "Favorite button" interactive|
 | Wednesday|  Looked for fonts for website|
-| Thursday |  |
-| Friday   |  |
+| Thursday |  Other school stuff|
+| Friday   |  Feedback from teacher|
 
-### Uke ..
+### Uke 17
 | Day      | Log                                      |
 |----------|------------------------------------------|
-| Saturday |                                          |
+| Saturday | Read [about UX testing](https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html) Published website in my new azure subscription. Made a lot of changes to the repport. |
 | Sunday   |                                          |
 | Monday   |  |
 | Tuesday  |                        |
 | Wednesday|  |
 | Thursday |              |
+| Friday   |  |
+
+
+### Uke ..
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Saturday |  |
+| Sunday   |  |
+| Monday   |  |
+| Tuesday  |  |
+| Wednesday|  |
+| Thursday |  |
 | Friday   |  |
