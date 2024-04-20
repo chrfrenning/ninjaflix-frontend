@@ -47,8 +47,12 @@ Veiledning til prosjektledelse
 Min plan for arbeidet er:
 Hva er planen for animasjoner
 
+## Moodboard
+
+![Moodboard](moodboard.png)
+
 ## Brukertesting
-Dette er en liste over viktige funksjoner:
+...
 - Se på anime
 - Oppdage ny og spennende anime
 - Spare anime man vil se til senenre
