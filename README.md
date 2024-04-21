@@ -72,6 +72,23 @@ TODO: publisere på skolens nettverk.
 
 TODO: Flytte ninjaflix.no pekeren til min egen Azure
 
+## Verktøy
+Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse av hva jeg har brukt dem til og hvorfor.
+| Product | Description |
+|---------|-------------|
+| Figma  | Laget interaktiv prototype av produktet, tidlig brukertesting med figma sin mobil app. |
+| Midjourney  | Utkast til logo. |
+| Adobe Illustratior  | Brukt til å lage logo til vektorgrafikk med bezier kurver. Expoterte som svg. |
+| Canva  | Lagde moodboard med mal frunnet på canva. Og bilder på moodboard er også fra canva. |
+| Visual studio code  | Kodet i HTML, CSS og JavaScript her. |
+| Github copilot  | KI hjelp i koden, brukte både chat og auto complete. |
+| Github.com  | Lagret koden i Github.com. |
+| Azure | Satte opp static webapp til å automatisk publisere koden fra Github. |
+| Domeneshop  | Kjøpte domenet Ninjaflix.no, og laget peker til Azure. |
+| Markdown  | Skrev rapporten i markdown. |
+
+
+
 
 ## Spærsmål til mentor
 - Hvordan levere figma prosjektet? Ta screenshots og URL i rapporten?
@@ -106,11 +123,11 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Day      | Log                                      |
 |----------|------------------------------------------|
 | Saturday | Read [about UX testing](https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html) Published website in my new azure subscription. Made a lot of changes to the repport. |
-| Sunday   |                                          |
+| Sunday   |  |
 | Monday   |  |
-| Tuesday  |                        |
+| Tuesday  |  |
 | Wednesday|  |
-| Thursday |              |
+| Thursday |  |
 | Friday   |  |
 
 
