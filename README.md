@@ -47,9 +47,32 @@ Veiledning til prosjektledelse
 Min plan for arbeidet er:
 Hva er planen for animasjoner
 
+
+## Om Ninjaflix
+
+Ninjaflix skal bli en app og et nettsted for de som har lyst til å se på anime trygt og gratis. Målgruppen er ungdommer og unge voksene i alderen 13-25. Jeg antar at alle har en mobil og at de primert kommer til å bruke denne nettsiden på mobilen sin. 
+
 ## Moodboard
 
 ![Moodboard](moodboard.png)
+
+Jeg har tatt inspirasjon fra Netflix og YouTube. De som er kjent med disse appene skal  kunne enkelt kunne finne seg frem på ninjaflix. Farger, kontraster og grafikk er inspirert av anime og cosplay. 
+
+## Prototype
+
+TODO: Finne en måte å se hva animeen heter på mobil.
+
+Jeg brukte figma til å lage en interaktiv prototype av appen. Jeg begynte først i Adobe XD, men bytett til figma fordi det føltes for meg at det ble enkldere å bruke. Noe jeg syntes er fint med figma er at det var enkelt å gjøre prototypen interaktiv og enklere å finne hjelpe videoer på youtube. Det ble enkelt å tweake på designet fordi man kan lage komponenter og når man endrer dem så oppdaterer alle kopier av den komponenten med en gang.
+
+Her kan dere se alle skjermene i ninjaflix prototypen. [Hele prosjektet kan ses her.](https://www.figma.com/file/OrqfHpCBjGeqlZ18T2DPhD/Ninjaflix?type=design&node-id=0%3A1&mode=design&t=N35wwKMUdCEAEl0U-1) (Jeg fant ikke noen måte å exportere filene å legge dem i en zip, men nedenfor ser dere en screenshot også.)
+
+![Hele figma canvas](figma.png)
+
+Nedenfor ser dere hjemmeskjermen. Det som er viktig med den er at man kan få se ny anime som akkurat kom ut. Man skal få forslag for å finne ting man kan like, og som man vil se i fremtiden. Man skal også kunne fortsette på ting man har startet å se.
+
+![Prototype av hjemmeskjermen](figma_closeup.png)
+
+[Test prototypen her.](https://www.figma.com/proto/OrqfHpCBjGeqlZ18T2DPhD/Ninjaflix?type=design&node-id=1-3&t=N35wwKMUdCEAEl0U-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Brukertesting
 ...
@@ -71,6 +94,8 @@ Jeg fikk hjelp til å publisere nettstedet på Azure websites. [Prosjektet kan t
 TODO: publisere på skolens nettverk.
 
 TODO: Flytte ninjaflix.no pekeren til min egen Azure
+
+
 
 ## Verktøy
 Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse av hva jeg har brukt dem til og hvorfor.
