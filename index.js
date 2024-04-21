@@ -28,15 +28,6 @@ addVideosToList = function(videos, listItemId = "video-list") {
     }
 }
 
-onSearchVideos = function() {
-    var searchInput = document.getElementById('search-box');
-    var query = searchInput.value;
-
-    searchVideos(query).then(function(videos) {
-        addVideosToList(videos);
-    });
-}
-
 document.addEventListener("DOMContentLoaded", function() {
     init().then(function() {
         listVideos().then(function(videos) {

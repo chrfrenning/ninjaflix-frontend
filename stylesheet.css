@@ -1,12 +1,90 @@
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
+    font-family: "lunatix", sans-serif;
+    font-weight: 400;
+    font-size: 1.4em;
     margin: 0;
     padding: 0;
+    background-color: #2B2B2B;
+    color: #DDDCD1;
+}
+
+a {
+    color: #DDDCD1;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #AF0105;
+    padding: 10px 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    background: #DDDCD1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    outline: none;
+    width: 40px;
+    height: 40px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    background: #DDDCD1;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 22px;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    font-family: "lunatix", sans-serif;
+}
+
+.logo {
+   width: auto;
+   height: 80px;
+}
+
+.logo, .title, .search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+    border: none;
+    outline: none;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+   
 }
 
 h1 {
-    color: #333;
     margin-top: 50px;
 }
 
@@ -35,6 +113,11 @@ h1 {
 /* watch.html */
 
 #video-container {
+}
+
+.video-title {
+    margin-top: 5px;
+
 }
 
 #video-container video {

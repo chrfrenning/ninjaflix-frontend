@@ -2,31 +2,31 @@
 
 ## Vurderingskriterier
 
-- [ ] Satt personlige læringsmål
+- [x] Satt personlige læringsmål
 - [ ] Planlagt prosjektet
 - [ ] Dokumentert hvordan du jobbet med prosjektet
-- [ ] Brukt passende verktøy
-- [ ] Forklart valg av verktøy
+- [x] Brukt passende verktøy
+- [x] Forklart valg av verktøy
 - [ ] Brukt tilbakemeldinger for å forbedre arbeidet
 - [ ] Gjennomført brukertesting
 - [ ] Rapportert brukertesting
 - [ ] Bruker farger, grafikk og fotografi på en god måte
-- [ ] Bruker Internett og AI
+- [x] Bruker Internett og AI
 
 ### Funksjonelle krav
 
-- [ ] Passet på filstørrelser
-- [ ] Valgt riktige filformater
+- [x] Passet på filstørrelser
+- [x] Valgt riktige filformater
 - [ ] Brukt nettverk for å gjøre prosjektet tilgjengelig
 - [ ] Ryddig og kommentert kode
 - [ ] Universell utforming (WCAG2 og UU tilsynet)
 - [ ] Bruker animasjoner
-- [ ] Bruker fonter
+- [x] Bruker fonter
 
 ### Ikke funksjonelle krav
 
 - [ ] Fokusert på brukervennlighet
-- [ ] Tilpasset målgruppen og budskapet
+- [x] Tilpasset målgruppen og budskapet
 - [ ] Fulgt lover og regler, tenkt på hva som er rett og galt
 
 ## Læringsmål
@@ -104,6 +104,7 @@ Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse
 | Figma  | Laget interaktiv prototype av produktet, tidlig brukertesting med figma sin mobil app. |
 | Midjourney  | Utkast til logo. |
 | Adobe Illustratior  | Brukt til å lage logo til vektorgrafikk med bezier kurver. Expoterte som svg. |
+| Adobe fonts  | Bruker font lunatix fra adobe. |
 | Canva  | Lagde moodboard med mal frunnet på canva. Og bilder på moodboard er også fra canva. |
 | Visual studio code  | Kodet i HTML, CSS og JavaScript her. |
 | Github copilot  | KI hjelp i koden, brukte både chat og auto complete. |
@@ -111,6 +112,7 @@ Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse
 | Azure | Satte opp static webapp til å automatisk publisere koden fra Github. |
 | Domeneshop  | Kjøpte domenet Ninjaflix.no, og laget peker til Azure. |
 | Markdown  | Skrev rapporten i markdown. |
+
 
 
 
@@ -148,7 +150,7 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Day      | Log                                      |
 |----------|------------------------------------------|
 | Saturday | Read [about UX testing](https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html) Published website in my new azure subscription. Made a lot of changes to the repport. |
-| Sunday   |  |
+| Sunday   | Lagert ny JS fil for felles komponenterm, laget header, lagt inn logo, CSS farger fra prototype, skrevet rapport om moodboard, prototype, verktøy og målgruppe.  |
 | Monday   |  |
 | Tuesday  |  |
 | Wednesday|  |
