@@ -75,7 +75,9 @@ Nedenfor ser dere hjemmeskjermen. Det som er viktig med den er at man kan få se
 [Test prototypen her.](https://www.figma.com/proto/OrqfHpCBjGeqlZ18T2DPhD/Ninjaflix?type=design&node-id=1-3&t=N35wwKMUdCEAEl0U-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Brukertesting
-...
+
+I brukertestingen vil jeg finnne ut om brukerene kan løse de viktigste oppgavene i appen:
+
 - Se på anime
 - Oppdage ny og spennende anime
 - Spare anime man vil se til senenre
@@ -83,8 +85,33 @@ Nedenfor ser dere hjemmeskjermen. Det som er viktig med den er at man kan få se
 - Få gode anbefalinger 
 - Finne anime enkelt i søk funksjonen
 
+Jeg vil gi dem åpene oppgaver og se hvordan de utfører dem. Jeg skal ta notater underveis. 
+
+### Testing av prototypen 
+Figma er ikke helt som den virkelige appen vil bli, men jeg starter med brukertesting av prototypen for å få tilig feedback på prosjektet. 
+
+Desverre kunne jeg ikke legge inn video i figma uten å betale så i brukertesten bruker jeg bare bilder. 
+
+#### Manuskript
+Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninjaflix er en app som lar deg streame anime. 
+1. Her er en prototype. Kan du finne en film og se på den?
+2. Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?
+3. Noen anbefaler en serie til deg. Kan du finne den?
+
+#### Resultater 
+
+Jeg gjore brukertesting med tre personer. Nedenfor har jeg listet resultatene: 
+
+1. 
+1. 
+1. 
+
+
 ## Backend 
 Jeg ville fokusere på frontend kodingen og designet og trengte hjelp til backend. Jeg fikk hjelp hjemme til å lage en prototype for en tenkt backend, denne koden finnes i `common.js`. Vi lastet ned en del filmer fra YouTube, lagde thumbnails av dem og lagret dem i skyen. 
+
+TODO: Make heart function work
+
 
 ## Nettverk
 Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. [Prosjektet kan ses her.](https://github.com/chrfrenning/ninjaflix-frontend)
@@ -151,7 +178,7 @@ I restarted my task because I had no motivation for the helping website for Kube
 |----------|------------------------------------------|
 | Saturday | Read [about UX testing](https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html) Published website in my new azure subscription. Made a lot of changes to the repport. |
 | Sunday   | Lagert ny JS fil for felles komponenterm, laget header, lagt inn logo, CSS farger fra prototype, skrevet rapport om moodboard, prototype, verktøy og målgruppe.  |
-| Monday   |  |
+| Monday   | Laget brukertesting spørsmål og finpusset på figma. Laget promo for ny film på hjemmesiden. Stylet tittler og knapper. |
 | Tuesday  |  |
 | Wednesday|  |
 | Thursday |  |
