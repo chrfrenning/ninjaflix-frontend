@@ -1,5 +1,16 @@
 /* requires common.js */
 
+document.addEventListener("DOMContentLoaded", function() {
+    init().then(function() {
+        listVideos().then(function(videos) {
+            addVideosToList(videos);
+        });
+    });
+    
+    showSlides(slideIndex);
+    setInterval(autoSlide, 5000);
+});
+
 addVideosToList = function(videos, listItemId = "video-list") {
     var videoList = document.getElementById(listItemId);
     videoList.innerHTML = '';
@@ -28,10 +39,44 @@ addVideosToList = function(videos, listItemId = "video-list") {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-    init().then(function() {
-        listVideos().then(function(videos) {
-            addVideosToList(videos);
-        });
-    });
-});
+/*
+ *
+ * Featured films
+ *
+ * */
+
+let slideIndex = 1;
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < dots.length; i++) {
+    dots[i].classList.remove("active");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].classList.add("active");
+}
+
+function autoSlide() {
+  slideIndex++;
+  showSlides(slideIndex);
+}
