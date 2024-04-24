@@ -179,8 +179,8 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Saturday | Read [about UX testing](https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html) Published website in my new azure subscription. Made a lot of changes to the repport. |
 | Sunday   | Lagert ny JS fil for felles komponenterm, laget header, lagt inn logo, CSS farger fra prototype, skrevet rapport om moodboard, prototype, verktøy og målgruppe.  |
 | Monday   | Laget brukertesting spørsmål og finpusset på figma. Laget promo for ny film på hjemmesiden. Stylet tittler og knapper. |
-| Tuesday  |  |
-| Wednesday|  |
+| Tuesday  | Pause |
+| Wednesday| Laget animert slide show for featured films |
 | Thursday |  |
 | Friday   |  |
 
