@@ -120,6 +120,11 @@ h1 {
     width: 100%;
     height: auto;
     object-fit: cover;
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center
 }
 
 .overlay-text {
@@ -142,6 +147,10 @@ h1 {
   /* Hide the images by default */
   .mySlides {
     display: none;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
   }
   
   /* Next & previous buttons */
