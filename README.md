@@ -181,7 +181,7 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Monday   | Laget brukertesting spørsmål og finpusset på figma. Laget promo for ny film på hjemmesiden. Stylet tittler og knapper. |
 | Tuesday  | Pause |
 | Wednesday| Laget animert slide show for featured films |
-| Thursday |  |
+| Thursday | Clean up av CSS og HTML for feature |
 | Friday   |  |
 
 
