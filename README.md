@@ -185,6 +185,18 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Friday   |  |
 
 
+### Uke 18
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Saturday |  |
+| Sunday   | Lagde feature-new, gjore det sånn at man før autromatikt nye videoer nor de blir lagt inn. |
+| Monday   |  |
+| Tuesday  |  |
+| Wednesday|  |
+| Thursday |  |
+| Friday   |  |
+
+
 ### Uke ..
 | Day      | Log                                      |
 |----------|------------------------------------------|

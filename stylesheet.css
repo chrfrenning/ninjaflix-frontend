@@ -114,7 +114,7 @@ h1 {
    position: relative;
    max-width: 100%;
    width: 100%;
-   height: 400px;
+   height: 200px;
 }
 
 .feature-new img {
@@ -123,26 +123,9 @@ h1 {
     object-fit: cover;
     display: none;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-size: cover;
     background-position: center
-}
-
-.scroll-container {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-    height: 50px;
-}
-
-.scroll-container li {
-   width: 200px;
-   height: 200px;
-   back
-
 }
 
 .overlay-text {
@@ -150,7 +133,7 @@ h1 {
     top: 0;
     left: 50%;
     width: 50%;
-    height: 400px;
+    height: 200px;
     background: rgb(0, 0, 0, 0.3); /* Semi-transparent white */
     backdrop-filter: blur(10px); /* Blur the background */
 }
@@ -166,7 +149,7 @@ h1 {
   .mySlides {
     display: none;
     width: 100%;
-    height: 400px;
+    height: 200px;
     background-size: cover;
     background-position: center;
   }
@@ -253,6 +236,38 @@ h1 {
     from {opacity: .4}
     to {opacity: 1}
   }
+
+
+/* horisontal scroll list */
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  
+  padding: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 20px;
+  width: 100%;
+  height: 150px;
+}
+
+.scroll-container li {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 150px;
+  min-width: 100px;
+  margin-left: 10px;
+  background-size: cover;
+}
+
+.scroll-container li span {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
 
 
 /* watch.html */

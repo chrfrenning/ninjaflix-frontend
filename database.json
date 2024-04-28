@@ -4,61 +4,91 @@
       "id": "e2ee8af1-3309-439a-ba0d-7d2a5e3d90ca",
       "title": "HOWLS CASTLE Explained  [Howls Moving Castle]  Studio Ghibli Lore",
       "original_filename": "HOWLS CASTLE Explained  [Howls Moving Castle]  Studio Ghibli Lore.mp4",
-      "genre": "Fantasy"
+      "genre": "Fantasy",
+      "new": true,
+      "recommended": false,
+      "featured": false
     },
     {
       "id": "f6e69550-0893-403d-9cce-b94d2bc19ad0",
       "title": "Boy Enrolls In An Elite School And Hides His True IQ",
       "original_filename": "Boy Enrolls In An Elite School And Hides His True IQ.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": true,
+      "featured": false
     },
     {
       "id": "cbb5436f-8194-4eca-b840-120875bdcd06",
       "title": "An Incorrect Summary of Death Note  Anime Recap",
       "original_filename": "An Incorrect Summary of Death Note  Anime Recap.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": true,
+      "featured": true
     },
     {
       "id": "add77b04-e42c-4800-861f-532318975bbf",
       "title": "Boy Born With Zero Magic But Became Strongest At The Magic Academy By Leveling His Strength Instead",
       "original_filename": "Boy Born With Zero Magic But Became Strongest At The Magic Academy By Leveling His Strength Instead.mp4",
-      "genre": "Fantasy"
+      "genre": "Fantasy",
+      "new": true,
+      "recommended": true,
+      "featured": false
     },
     {
       "id": "b08c59a4-17f4-44e7-a86f-311d58bb92f4",
       "title": "Attack On Titan Explained In ONLY 10 Minutes",
       "original_filename": "Attack On Titan Explained In ONLY 10 Minutes.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": true,
+      "featured": true
     },
     {
       "id": "f806ad9b-69bc-4df4-897a-763bd5d778c3",
       "title": "Lonely Boy Pretends To Be Weak But Actually Possesses Immortal Powers  Anime Recap",
       "original_filename": "Lonely Boy Pretends To Be Weak But Actually Possesses Immortal Powers  Anime Recap.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": false,
+      "recommended": true,
+      "featured": false
     },
     {
       "id": "38eec66d-789c-4962-acb5-8244ce3b3285",
       "title": "He Is The Strongest Villain But Just Wants A Normal Life",
       "original_filename": "He Is The Strongest Villain But Just Wants A Normal Life.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": false,
+      "featured": false
     },
     {
       "id": "a95165c0-65d7-40b9-94c4-63f5b6de8f6b",
       "title": "The Ultimate My Hero Academia Timeline up to Season 5!!!",
       "original_filename": "The Ultimate My Hero Academia Timeline up to Season 5!!!.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": true,
+      "featured": true
     },
     {
       "id": "87492b2e-9382-4117-bfa6-159d3c9263bd",
       "title": "Jujutsu Kaisen Explained In EXACTLY 10 Minutes",
       "original_filename": "Jujutsu Kaisen Explained In EXACTLY 10 Minutes.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": false,
+      "recommended": true,
+      "featured": false
     },
     {
       "id": "ec8f76af-5295-4c41-b187-e86f88a455e7",
       "title": "Beautiful Servant Girl Becomes Medical Master In Emperors Palace!  Anime Recap",
       "original_filename": "Beautiful Servant Girl Becomes Medical Master In Emperors Palace!  Anime Recap.mp4",
-      "genre": "Action"
+      "genre": "Action",
+      "new": true,
+      "recommended": false,
+      "featured": false
     }
   ]
 }

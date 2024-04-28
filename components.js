@@ -15,7 +15,7 @@ onSearchVideos = function() {
     var query = searchInput.value;
 
     searchVideos(query).then(function(videos) {
-        addVideosToList(videos);
+        //addVideosToList(videos);
     });
 }
 
