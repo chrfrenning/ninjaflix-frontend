@@ -63,7 +63,7 @@ addVideosToFeaturedSlides = function(videos) {
     slideTextContainer.className = 'overlay-text';
     slide.append(slideTextContainer);
 
-    var slideText = document.createElement('h1');
+    var slideText = document.createElement('h4');
     slideText.innerText = video.title;
     slideTextContainer.append(slideText);
 

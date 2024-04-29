@@ -111,6 +111,7 @@ Jeg gjore brukertesting med tre personer. Nedenfor har jeg listet resultatene:
 Jeg ville fokusere på frontend kodingen og designet og trengte hjelp til backend. Jeg fikk hjelp hjemme til å lage en prototype for en tenkt backend, denne koden finnes i `common.js`. Vi lastet ned en del filmer fra YouTube, lagde thumbnails av dem og lagret dem i skyen. 
 
 TODO: Make heart function work
+TODO: Make fature work 
 
 
 ## Nettverk
@@ -190,7 +191,7 @@ I restarted my task because I had no motivation for the helping website for Kube
 |----------|------------------------------------------|
 | Saturday |  |
 | Sunday   | Lagde feature-new, gjore det sånn at man før autromatikt nye videoer nor de blir lagt inn. |
-| Monday   |  |
+| Monday   | Fikset tekst på featured og videoer under. |
 | Tuesday  |  |
 | Wednesday|  |
 | Thursday |  |
