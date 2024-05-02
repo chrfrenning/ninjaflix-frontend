@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         listBookmarkedVideos().then(function(videos) {
           addVideosToScrollContainer(videos, document.getElementById("later-scroller"));
+        });
+
+        listFavoriteVideos().then(function(videos) {
           addVideosToScrollContainer(videos, document.getElementById("fav-scroller"));
         });
     });
