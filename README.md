@@ -95,8 +95,21 @@ Desverre kunne jeg ikke legge inn video i figma uten å betale så i brukerteste
 #### Manuskript
 Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninjaflix er en app som lar deg streame anime. 
 1. Her er en prototype. Kan du finne en film og se på den?
+    person:
+        1. Gjorde det raskt
+        2. gjode raskt 
+        3. --""--
+
 2. Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?
+    person:
+        1.Gjorde det raskt
+        2. Fant ut av det uten hjelp
+        3. --""--
 3. Noen anbefaler en serie til deg. Kan du finne den?
+    person:
+        1. De skroller og finner den, eller de tenker at de kan søke.
+        2. De søker med en gang 
+        3. --""--
 
 #### Resultater 
 
@@ -112,6 +125,7 @@ Jeg ville fokusere på frontend kodingen og designet og trengte hjelp til backen
 
 TODO: Make heart function work
 TODO: Make fature work 
+TODO: Søk funksjon funker ikke 
 
 
 ## Nettverk
