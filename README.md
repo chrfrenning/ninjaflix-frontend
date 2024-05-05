@@ -88,25 +88,31 @@ I brukertestingen vil jeg finnne ut om brukerene kan løse de viktigste oppgaven
 Jeg vil gi dem åpene oppgaver og se hvordan de utfører dem. Jeg skal ta notater underveis. 
 
 ### Testing av prototypen 
-Figma er ikke helt som den virkelige appen vil bli, men jeg starter med brukertesting av prototypen for å få tilig feedback på prosjektet. 
+Figma er et skisseverktøy. jeg har brukt det for å lage en prottotype av mobilappen Ninjaflix. Prototype vil ikke ha all funksonalitet som den endlige appen, men den vil gi et bilde av hvordan appen kan fungere. Jeg bruker prototypen som jeg har laget i figma som et verktøy i brukertesting for at jeg tidlig skal kunne få god feedback på appen og for at jeg skal kunne gjøre justeringer tidlig i prosessen. 
 
 Desverre kunne jeg ikke legge inn video i figma uten å betale så i brukertesten bruker jeg bare bilder. 
 
 #### Manuskript
 Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninjaflix er en app som lar deg streame anime. 
 1. Her er en prototype. Kan du finne en film og se på den?
+    
     person:
+
         1. Gjorde det raskt
         2. gjode raskt 
         3. --""--
 
 2. Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?
+    
     person:
+
         1.Gjorde det raskt
         2. Fant ut av det uten hjelp
         3. --""--
 3. Noen anbefaler en serie til deg. Kan du finne den?
+    
     person:
+
         1. De skroller og finner den, eller de tenker at de kan søke.
         2. De søker med en gang 
         3. --""--
@@ -115,8 +121,8 @@ Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninj
 
 Jeg gjore brukertesting med tre personer. Nedenfor har jeg listet resultatene: 
 
-1. 
-1. 
+1. De alle fant frem raskt med spørsmålene 
+1.  
 1. 
 
 
@@ -208,8 +214,20 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Monday   | Fikset tekst på featured og videoer under. |
 | Tuesday  |  |
 | Wednesday|  |
+| Thursday | Brukertesting |
+| Friday   |  |
+
+### Uke 19
+| Day      | Log                                      |
+|----------|------------------------------------------|
+| Saturday |  |
+| Sunday   |  |
+| Monday   |  |
+| Tuesday  |  |
+| Wednesday|  |
 | Thursday |  |
 | Friday   |  |
+
 
 
 ### Uke ..
