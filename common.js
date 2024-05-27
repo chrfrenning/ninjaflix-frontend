@@ -15,11 +15,12 @@ let latencySimulation = 100;
  * Using promises to enable future proper api calls
  */
 
-saveFavLikeDisState = function(id, favorite, like, dislike) {
+addLike = function(id) {
     return new Promise((resolve, reject) => {
         getVideoInfo(id).then(function(video) {
             // delay to simulate backend
             setTimeout(function() {
+                video.likes++;
                 saveVideoStateToLocalStorage(video);
                 resolve(video);
             }, latencySimulation);
@@ -27,12 +28,38 @@ saveFavLikeDisState = function(id, favorite, like, dislike) {
     });
 }
 
-saveBookmark = function(id, bookmark) {
+addDislike = function(id) {
     return new Promise((resolve, reject) => {
         getVideoInfo(id).then(function(video) {
             // delay to simulate backend
             setTimeout(function() {
-                video.bookmarked = bookmark;
+                video.dislikes++;
+                saveVideoStateToLocalStorage(video);
+                resolve(video);
+            }, latencySimulation);
+        });
+    });
+}
+
+saveFavorite = function(id, favoriteFlag) {
+    return new Promise((resolve, reject) => {
+        getVideoInfo(id).then(function(video) {
+            // delay to simulate backend
+            setTimeout(function() {
+                video.favorite = favoriteFlag;
+                saveVideoStateToLocalStorage(video);
+                resolve(video);
+            }, latencySimulation);
+        });
+    });
+}
+
+saveBookmark = function(id, bookmarkFlag) {
+    return new Promise((resolve, reject) => {
+        getVideoInfo(id).then(function(video) {
+            // delay to simulate backend
+            setTimeout(function() {
+                video.bookmarked = bookmarkFlag;
                 saveVideoStateToLocalStorage(video);
                 resolve(video);
             }, latencySimulation);
@@ -52,7 +79,10 @@ mergeWithLocalStorage = function(videos) {
     for (var i = 0; i < videos.length; i++) {
         let video = loadVideoStateFromLocalStorage(videos[i].id);
         if (video) {
-            videos[i] = Object.assign(videos[i], video);
+            videos[i].likes = video.likes;
+            videos[i].dislikes = video.dislikes;
+            videos[i].favorite = video.favorite;
+            videos[i].bookmarked = video.bookmarked;
         }
     }
 }
@@ -91,7 +121,6 @@ initExtendedVideoProperties = function(videos) {
         video.dislikes = 0;
         video.favorite = false;
         video.bookmarked = false;
-        video.genre = "anime";
     });
 }
 
@@ -123,6 +152,16 @@ searchVideos = function(query) {
         listVideos().then(function(videos) {
             let results = videos.filter(video => video.title.toLowerCase().includes(query.toLowerCase()));
             resolve(results);
+        });
+    });
+}
+
+listFavoriteVideos = function() {
+    return new Promise((resolve, reject) => {
+        listVideos().then(function(videos) {
+            let results = videos.filter(video => video.favorite);
+            let firstFive = results.slice(0, 3);
+            resolve(firstFive);
         });
     });
 }
