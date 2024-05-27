@@ -115,7 +115,7 @@ input {
    max-width: 100%;
    width: 100%;
    height: 230px;
-}|
+}
 
 #feature-new {
    max-width: 100%;
@@ -294,8 +294,6 @@ input {
 
 /* watch.html */
 
-#video-container {
-}
 
 #video-title {
     margin-top: 5px;

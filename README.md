@@ -101,6 +101,7 @@ Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninj
         1. Gjorde det raskt
         2. gjode raskt 
         3. --""--
+        4. Ja 
 
 2. Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?
     
@@ -109,6 +110,8 @@ Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninj
         1.Gjorde det raskt
         2. Fant ut av det uten hjelp
         3. --""--
+        4. Ja
+
 3. Noen anbefaler en serie til deg. Kan du finne den?
     
     person:
@@ -116,6 +119,7 @@ Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninj
         1. De skroller og finner den, eller de tenker at de kan søke.
         2. De søker med en gang 
         3. --""--
+        4. 
 
 #### Resultater 
 
