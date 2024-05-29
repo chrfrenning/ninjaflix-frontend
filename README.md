@@ -150,6 +150,50 @@ Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse
 
 
 
+## Koden
+
+Appen består av to sider. Index.html er hjemmesiden og watch.html lar brukeren se en film. Begge sidene har felles stylesheet, og bruker components.js for å få samme header fra header fra header.html. 
+
+HTML filene har egentlig ikke noe innhold, bare placeholdere som fylles med filmer fra database.json. Denne funksjonen finnes i common.js. Jeg fikk hjelp til å utvikle denne filen som inneholder funksjoner for å hente database.json med fetch funksjonen og filtrere den for de forskjellige listene. Det er også funksjoner som registrerer likes, dislikes, favorites og watch later. Dette lagres i browserens local storage.
+
+Hver side kaller init for å laste videone. Init blir kalt når browseren sender DOMContentLoaded eventet. Da kalles funksjoner som legger innhold inn i placeholderne.
+
+```javascript
+addVideosToScrollContainer = function(videos, list) {
+  list.innerHTML = '';
+
+  for (var i = 0; i < videos.length; i++) {
+    var video = videos[i];
+
+    var videoItem = document.createElement('li');
+    videoItem.style.backgroundImage = `url(${baseUrl}thumbnails/${video.id}.jpg)`;
+    videoItem.onclick = (function(video) {
+      return function() {
+        window.location.href = 'watch.html?id=' + video.id;
+      };
+    })(video);
+
+    var videoTitle = document.createElement('span');
+    videoTitle.innerText = video.title;
+    videoItem.append(videoTitle);
+
+    list.append(videoItem);
+  }}
+```
+
+Det finnes flere like funksjoner. De bruker document.createElement for å lage nytt innhold som legges i placeholderne med item.append. Placeholderne finner jeg med document.getElementById. 
+
+
+### Animasjoner
+
+Jeg har annimasjoner på search baren og i kontrollen som viser fram innhold som jeg syntes er spesielt innteresant. Like og watch later knappene på watch.html skifter også farge når de blir klikket på. 
+
+
+
+
+## Hvordan jeg har jobbet med prosjektet
+
+Jeg tror de fleste av brukerne til Ninjaflix er ungdommer som vil bruke appen på en mobil. Derfor designet jeg den for mobil først og har ikke rukket å lage en pc versjon ennå, men appen er responsiv og vil tilpasse seg alle mobilstørrelser. For at pc versjonen skal bli bra må jeg lage noen helt nye kontroller som har knapper som kan styres med mus for de stedene jeg lar brukeren bruke touch og slide på mobil.
 
 
 ## Spørsmål til mentor
