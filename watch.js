@@ -159,3 +159,27 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+/* Animations on reactions buttons */
+
+setButtonAnimationReaction = function(button, symbol) {
+
+    button.addEventListener('click', () => {
+        console.log("adding reaction");
+        const reactionElement = document.createElement('span');
+        reactionElement.classList.add('reaction', 'flow-reaction');
+        reactionElement.innerHTML = symbol;
+        button.appendChild(reactionElement);
+
+        // Remove the heart after the animation is complete
+        reactionElement.addEventListener('animationend', () => {
+            console.log("reaction remove")
+            reactionElement.remove();
+        });
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    setButtonAnimationReaction( document.getElementById('favorite-button'), '❤️');
+    setButtonAnimationReaction( document.getElementById('like-button'), '👍');
+    setButtonAnimationReaction( document.getElementById('dislike-button'), '👎');
+});

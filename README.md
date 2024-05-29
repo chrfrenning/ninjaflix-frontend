@@ -204,7 +204,7 @@ Etter at JavaScriptet har kjørt, ser HTMLen slik ut:
 
 ### Animasjoner
 
-Jeg har annimasjoner på search baren og i kontrollen som viser fram innhold som jeg syntes er spesielt innteresant. Like og watch later knappene på watch.html skifter også farge når de blir klikket på. 
+Jeg har annimasjoner på search baren og i kontrollen som viser fram innhold som jeg syntes er spesielt innteresant. Favorite og watch later knappene på watch.html skifter også farge når de blir klikket på. Jeg har også puttet inn animasjoner så når du klikker på like, dislike eller favorite knappene.
 
 
 
