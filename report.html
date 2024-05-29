@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+</head>
+<body>
+<h1 id="ninjaflix">NinjaFlix</h1>
+<h2 id="læringsmål">Læringsmål</h2>
+<p>Mine læringsmål for dette prosjektet er:</p>
+<ol type="1">
+<li>Planlegge prosjektet og jobbe jevnt fram mot deadline</li>
+<li>Å planlegge og gjennomføre brukertesting</li>
+<li>Lære hvordan man bruker figma til interaktive prototyper</li>
+<li>Lage en bra og forståelig kode</li>
+<li>Jobbe tett med mentor. Og be ofte om tilbakemeldinger til
+prosjektet.</li>
+</ol>
+<h2 id="planlegging">Planlegging</h2>
+<p>Jeg startet på oppgaven om informasjonsside om Kuben. Jeg ble
+sittende fast og syntes det var vanskelig å lage innhold til siden. De
+første ukene fikk jeg ikke gjort så veldig mye. Jeg valgte å endre
+oppgave til streamng nettsted for da kunne jeg laste ned innhold som jeg
+er inntersert i fra YouTube. Jeg fikk også mere hjelp hjemme til
+prosjekt styring og en backend prototype som gjorde det mulig å få litt
+kul funksjonalitet. Jeg skal fokusere på frontend. Jeg lager moodboard
+for målgruppen min og bytter fra Adobe XD til Figma for å lage
+prototype. Jeg skal implementere frontended med HTML, CSS og JavaScript.
+Jeg skal lage animasjoner i CSS og bruke fonter fra Adobe.</p>
+<h2 id="om-ninjaflix">Om Ninjaflix</h2>
+<p>Ninjaflix skal bli en app og et nettsted for de som har lyst til å se
+på anime trygt og gratis. Målgruppen er ungdommer og unge voksene i
+alderen 13-25. Jeg antar at alle har en mobil og at de primert kommer
+til å bruke denne nettsiden på mobilen sin.</p>
+<h2 id="moodboard">Moodboard</h2>
+<figure>
+<img src="moodboard.png" alt="Moodboard" />
+<figcaption aria-hidden="true">Moodboard</figcaption>
+</figure>
+<p>Jeg har tatt inspirasjon fra Netflix og YouTube. De som er kjent med
+disse appene skal kunne enkelt kunne finne seg frem på ninjaflix.
+Farger, kontraster og grafikk er inspirert av anime og cosplay.</p>
+<h2 id="prototype">Prototype</h2>
+<p>Jeg brukte figma til å lage en interaktiv prototype av appen. Jeg
+begynte først i Adobe XD, men bytett til figma fordi det føltes for meg
+at det ble enkldere å bruke. Noe jeg syntes er fint med figma er at det
+var enkelt å gjøre prototypen interaktiv og enklere å finne hjelpe
+videoer på youtube. Det ble enkelt å tweake på designet fordi man kan
+lage komponenter og når man endrer dem så oppdaterer alle kopier av den
+komponenten med en gang.</p>
+<p>Her kan dere se alle skjermene i ninjaflix prototypen. <a
+href="https://www.figma.com/file/OrqfHpCBjGeqlZ18T2DPhD/Ninjaflix?type=design&amp;node-id=0%3A1&amp;mode=design&amp;t=N35wwKMUdCEAEl0U-1">Hele
+prosjektet kan ses her.</a> (Jeg fant ikke noen måte å exportere filene
+å legge dem i en zip, men nedenfor ser dere en screenshot også.)</p>
+<figure>
+<img src="figma.png" alt="Hele figma canvas" />
+<figcaption aria-hidden="true">Hele figma canvas</figcaption>
+</figure>
+<p>Nedenfor ser dere hjemmeskjermen. Det som er viktig med den er at man
+kan få se ny anime som akkurat kom ut. Man skal få forslag for å finne
+ting man kan like, og som man vil se i fremtiden. Man skal også kunne
+fortsette på ting man har startet å se.</p>
+<figure>
+<img src="figma_closeup.png" alt="Prototype av hjemmeskjermen" />
+<figcaption aria-hidden="true">Prototype av hjemmeskjermen</figcaption>
+</figure>
+<p><a
+href="https://www.figma.com/proto/OrqfHpCBjGeqlZ18T2DPhD/Ninjaflix?type=design&amp;node-id=1-3&amp;t=N35wwKMUdCEAEl0U-0&amp;scaling=scale-down&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A3">Test
+prototypen her.</a></p>
+<h2 id="brukertesting">Brukertesting</h2>
+<p>I brukertestingen vil jeg finnne ut om brukerene kan løse de
+viktigste oppgavene i appen:</p>
+<ul>
+<li>Se på anime</li>
+<li>Oppdage ny og spennende anime</li>
+<li>Spare anime man vil se til senenre</li>
+<li>Kunne fortsette på en anime og starte på samme sted selv om man
+måtte lukke tjenester</li>
+<li>Få gode anbefalinger</li>
+<li>Finne anime enkelt i søk funksjonen</li>
+</ul>
+<p>Jeg vil gi dem åpene oppgaver og se hvordan de utfører dem. Jeg skal
+ta notater underveis.</p>
+<h3 id="testing-av-prototypen">Testing av prototypen</h3>
+<p>Figma er et skisseverktøy. jeg har brukt det for å lage en prottotype
+av mobilappen Ninjaflix. Prototype vil ikke ha all funksonalitet som den
+endlige appen, men den vil gi et bilde av hvordan appen kan fungere. Jeg
+bruker prototypen som jeg har laget i figma som et verktøy i
+brukertesting for at jeg tidlig skal kunne få god feedback på appen og
+for at jeg skal kunne gjøre justeringer tidlig i prosessen.</p>
+<p>Desverre kunne jeg ikke legge inn video i figma uten å betale så i
+brukertesten bruker jeg bare bilder.</p>
+<h4 id="manuskript">Manuskript</h4>
+<p>Takk for at du hjelper meg med oppgaven og vil være med på en
+brukertest. Ninjaflix er en app som lar deg streame anime.</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Spørsmål</th>
+<th>Person 1</th>
+<th>Person 2</th>
+<th>Person 3</th>
+<th>Person 4</th>
+<th>Notater</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Alder</td>
+<td>15-20</td>
+<td>15-20</td>
+<td>15-20</td>
+<td>20-30</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Anime entusiast</td>
+<td>Ja</td>
+<td>Ja</td>
+<td>Nei</td>
+<td>Nei</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Her er en prototype. Kan du finne en film og se på den?</td>
+<td>Gjorde det raskt</td>
+<td>Gjorde det raskt</td>
+<td>Gjorde det raskt</td>
+<td>Ja</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tenk deg at du finner en interessant serie men ikke har tid til å se
+på den nå. Hva gjør du da?</td>
+<td>Gjorde det raskt</td>
+<td>Fant ut av det uten hjelp</td>
+<td>Fant ut av det uten hjelp</td>
+<td>Ja</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Noen anbefaler en serie til deg. Kan du finne den?</td>
+<td>De skroller og finner den, eller de tenker at de kan søke.</td>
+<td>De søker med en gang</td>
+<td>De søker med en gang</td>
+<td>Tenker ikke på å søke men blar gjennom de forskjellige tittlene for
+å finne den</td>
+<td>Kanskje gjøre søkefunksjonen enklere å finne</td>
+</tr>
+</tbody>
+</table>
+<h4 id="konklusjon">Konklusjon</h4>
+<p>Jeg gjorde brukertesting av prototypen i Figma med brødrene og
+bonusmoren min. De forsto konseptet og fant lett ut hvordan man
+navigerte.</p>
+<p>Brukertesten over ble gjennomført på skolen med elever og en lærer
+med en tidlig utgave av appen. Appen ligner veldig på andre streaming
+nettsteder, og det har jeg gjort med vilje slik at all lett forstår den.
+Jeg har også blitt inspirert av Netflix sine farger, og ønsker at det
+skal være en gjennskjennings effekt.</p>
+<p>Alle brukerne klarte fint å bruke appen, ingen trengte hjelp, men
+noen brukte litt tid på å finne ut hvordan de skulle gjøre en
+oppgave.</p>
+<h2 id="backend">Backend</h2>
+<p>Jeg ville fokusere på frontend kodingen og designet og trengte hjelp
+til backend. Jeg fikk hjelp hjemme til å lage en prototype for en tenkt
+backend, denne koden finnes i <code>common.js</code>. Vi lastet ned en
+del filmer fra YouTube, lagde thumbnails av dem og lagret dem i
+skyen.</p>
+<p>TODO: Søk funksjon funker ikke</p>
+<h2 id="nettverk">Nettverk</h2>
+<figure>
+<img src="github.png" alt="Koden i GitHub" />
+<figcaption aria-hidden="true">Koden i GitHub</figcaption>
+</figure>
+<p>Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. <a
+href="https://github.com/lolrandomthings/ninjaflix-frontend">Prosjektet
+kan ses her.</a></p>
+<figure>
+<img src="azure.png" alt="Azure" />
+<figcaption aria-hidden="true">Azure</figcaption>
+</figure>
+<p>Jeg fikk hjelp til å publisere nettstedet på Azure websites. <a
+href="https://mango-sand-0dd272f10.5.azurestaticapps.net/">Prosjektet
+kan testes her.</a> Vi kjøpte også domene Ninjaflix.no på
+Domeneshop.</p>
+<p>Når jeg gjør endringer i koden og pusher til GitHub så oppdateres
+nettstedet automatiskt på grunn av GitHub actions.</p>
+<p>TODO: publisere på skolens nettverk. TODO: Flytte ninjaflix.no
+pekeren til min egen Azure</p>
+<h2 id="verktøy">Verktøy</h2>
+<p>Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort
+beskrivelse av hva jeg har brukt dem til og hvorfor.</p>
+<table>
+<colgroup>
+<col style="width: 40%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Figma</td>
+<td>Laget interaktiv prototype av produktet, tidlig brukertesting med
+figma sin mobil app.</td>
+</tr>
+<tr class="even">
+<td>Midjourney</td>
+<td>Utkast til logo.</td>
+</tr>
+<tr class="odd">
+<td>Adobe Illustratior</td>
+<td>Brukt til å lage logo til vektorgrafikk med bezier kurver. Expoterte
+som svg.</td>
+</tr>
+<tr class="even">
+<td>Adobe fonts</td>
+<td>Bruker font lunatix fra adobe.</td>
+</tr>
+<tr class="odd">
+<td>Canva</td>
+<td>Lagde moodboard med mal frunnet på canva. Og bilder på moodboard er
+også fra canva.</td>
+</tr>
+<tr class="even">
+<td>Visual studio code</td>
+<td>Kodet i HTML, CSS og JavaScript her.</td>
+</tr>
+<tr class="odd">
+<td>Github copilot</td>
+<td>KI hjelp i koden, brukte både chat og auto complete.</td>
+</tr>
+<tr class="even">
+<td>Github.com</td>
+<td>Lagret koden i Github.com.</td>
+</tr>
+<tr class="odd">
+<td>Azure</td>
+<td>Satte opp static webapp til å automatisk publisere koden fra
+Github.</td>
+</tr>
+<tr class="even">
+<td>Domeneshop</td>
+<td>Kjøpte domenet Ninjaflix.no, og laget peker til Azure.</td>
+</tr>
+<tr class="odd">
+<td>Markdown</td>
+<td>Skrev rapporten i markdown.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="koden">Koden</h2>
+<p>Appen består av to sider. Index.html er hjemmesiden og watch.html lar
+brukeren se en film. Begge sidene har felles stylesheet, og bruker
+components.js for å få samme header fra header fra header.html.</p>
+<p>HTML filene har egentlig ikke noe innhold, bare placeholdere som
+fylles med filmer fra database.json. Denne funksjonen finnes i
+common.js. Jeg fikk hjelp til å utvikle denne filen som inneholder
+funksjoner for å hente database.json med fetch funksjonen og filtrere
+den for de forskjellige listene. Det er også funksjoner som registrerer
+likes, dislikes, favorites og watch later. Dette lagres i browserens
+local storage.</p>
+<p>Hver side kaller init for å laste videone. Init blir kalt når
+browseren sender DOMContentLoaded eventet. Da kalles funksjoner som
+legger innhold inn i placeholderne.</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>addVideosToScrollContainer <span class="op">=</span> <span class="kw">function</span>(videos<span class="op">,</span> list) {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  list<span class="op">.</span><span class="at">innerHTML</span> <span class="op">=</span> <span class="st">&#39;&#39;</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (<span class="kw">var</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> videos<span class="op">.</span><span class="at">length</span><span class="op">;</span> i<span class="op">++</span>) {</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> video <span class="op">=</span> videos[i]<span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> videoItem <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&#39;li&#39;</span>)<span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    videoItem<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">backgroundImage</span> <span class="op">=</span> <span class="vs">`url(</span><span class="sc">${</span>baseUrl<span class="sc">}</span><span class="vs">thumbnails/</span><span class="sc">${</span>video<span class="op">.</span><span class="at">id</span><span class="sc">}</span><span class="vs">.jpg)`</span><span class="op">;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    videoItem<span class="op">.</span><span class="at">onclick</span> <span class="op">=</span> (<span class="kw">function</span>(video) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>      <span class="cf">return</span> <span class="kw">function</span>() {</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        <span class="bu">window</span><span class="op">.</span><span class="at">location</span><span class="op">.</span><span class="at">href</span> <span class="op">=</span> <span class="st">&#39;watch.html?id=&#39;</span> <span class="op">+</span> video<span class="op">.</span><span class="at">id</span><span class="op">;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>      }<span class="op">;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    })(video)<span class="op">;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">var</span> videoTitle <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">&#39;span&#39;</span>)<span class="op">;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    videoTitle<span class="op">.</span><span class="at">innerText</span> <span class="op">=</span> video<span class="op">.</span><span class="at">title</span><span class="op">;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    videoItem<span class="op">.</span><span class="fu">append</span>(videoTitle)<span class="op">;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    list<span class="op">.</span><span class="fu">append</span>(videoItem)<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  }}</span></code></pre></div>
+<p>Det finnes flere like funksjoner. De bruker document.createElement
+for å lage nytt innhold som legges i placeholderne med item.append.
+Placeholderne finner jeg med document.getElementById.</p>
+<p>Slik ser koden i index.html ut når den lastes og før javaskriptene
+kjøres:</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;</span><span class="kw">body</span><span class="dt">&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">header</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;header-placeholder&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">header</span><span class="dt">&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  ...</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="dt">&lt;</span><span class="kw">h2</span><span class="dt">&gt;</span>New films and series<span class="dt">&lt;/</span><span class="kw">h2</span><span class="dt">&gt;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">&lt;</span><span class="kw">ul</span><span class="ot"> id</span><span class="op">=</span><span class="st">&quot;new-scroller&quot;</span><span class="ot"> class</span><span class="op">=</span><span class="st">&quot;scroll-container&quot;</span><span class="dt">&gt;&lt;/</span><span class="kw">ul</span><span class="dt">&gt;</span></span></code></pre></div>
+<p>Etter at JavaScriptet har kjørt, ser HTMLen slik ut:</p>
+<figure>
+<img src="kode1.png" alt="Koden etter at JavaScriptet har kjørt" />
+<figcaption aria-hidden="true">Koden etter at JavaScriptet har
+kjørt</figcaption>
+</figure>
+<h3 id="animasjoner">Animasjoner</h3>
+<p>Jeg har annimasjoner på search baren og i kontrollen som viser fram
+innhold som jeg syntes er spesielt innteresant. Favorite og watch later
+knappene på watch.html skifter også farge når de blir klikket på. Jeg
+har også puttet inn animasjoner så når du klikker på like, dislike eller
+favorite knappene.</p>
+<h2 id="hvordan-jeg-har-jobbet-med-prosjektet">Hvordan jeg har jobbet
+med prosjektet</h2>
+<p>Jeg tror de fleste av brukerne til Ninjaflix er ungdommer som vil
+bruke appen på en mobil. Derfor designet jeg den for mobil først og har
+ikke rukket å lage en pc versjon ennå, men appen er responsiv og vil
+tilpasse seg alle mobilstørrelser. For at pc versjonen skal bli bra må
+jeg lage noen helt nye kontroller som har knapper som kan styres med mus
+for de stedene jeg lar brukeren bruke touch og slide på mobil.</p>
+<p>Jeg har blitt bedre på JavaScript og HTML. Jeg har lært noen nye
+teknikker for å laste innhold fra en database. Jeg har lært meg å bruke
+nye verktøy som Figma og GitHub. Jeg har lært hvordan man legger ting ut
+på nett med Domeneshop og Azure.</p>
+<p>Det har vert nyttig å skrive logg. Jeg har blitt bedre på å spørre og
+ta imot hjelp, men har fortsatt sittet mye fast og trengt en del hjelp
+med prosjektstyring for å holde meg i gang. Jeg syntes store prosjekter
+er ganske vanskelige fortsatt. Kansje jeg skal sammarbeide med noen på
+neste store oppgave?</p>
+<h3 id="planlagte-forbedringer-etter-fagsamtale">Planlagte forbedringer
+etter fagsamtale</h3>
+<ol type="1">
+<li>PC versjon</li>
+<li>Fikse søke funksjonen</li>
+<li>Gjøre fonter og titler enklere å lese</li>
+<li>UU: ha alt tekster på alle elementer</li>
+</ol>
+<h2 id="spørsmål-til-mentor">Spørsmål til mentor</h2>
+<ul>
+<li>Hvordan levere figma prosjektet? Ta screenshots og URL i
+rapporten?</li>
+<li>Spør: Ludvik om nettverk</li>
+</ul>
+<h2 id="vurderingskriterier">Vurderingskriterier</h2>
+<ul>
+<li><label><input type="checkbox" checked="" />Satt personlige
+læringsmål</label></li>
+<li><label><input type="checkbox" checked="" />Planlagt
+prosjektet</label></li>
+<li><label><input type="checkbox" checked="" />Dokumentert hvordan du
+jobbet med prosjektet</label></li>
+<li><label><input type="checkbox" checked="" />Brukt passende
+verktøy</label></li>
+<li><label><input type="checkbox" checked="" />Forklart valg av
+verktøy</label></li>
+<li>[-] Brukt tilbakemeldinger for å forbedre arbeidet</li>
+<li><label><input type="checkbox" checked="" />Gjennomført
+brukertesting</label></li>
+<li><label><input type="checkbox" checked="" />Rapportert
+brukertesting</label></li>
+<li><label><input type="checkbox" checked="" />Bruker farger, grafikk og
+fotografi på en god måte</label></li>
+<li><label><input type="checkbox" checked="" />Bruker Internett og
+AI</label></li>
+</ul>
+<h3 id="funksjonelle-krav">Funksjonelle krav</h3>
+<ul>
+<li><label><input type="checkbox" checked="" />Passet på
+filstørrelser</label></li>
+<li><label><input type="checkbox" checked="" />Valgt riktige
+filformater</label></li>
+<li>[-] Brukt nettverk for å gjøre prosjektet tilgjengelig</li>
+<li><label><input type="checkbox" checked="" />Ryddig og kommentert
+kode</label></li>
+<li><label><input type="checkbox" />Universell utforming (WCAG2 og UU
+tilsynet)</label></li>
+<li><label><input type="checkbox" checked="" />Bruker
+animasjoner</label></li>
+<li><label><input type="checkbox" checked="" />Bruker
+fonter</label></li>
+</ul>
+<h3 id="ikke-funksjonelle-krav">Ikke funksjonelle krav</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" checked="" />Fokusert på
+brukervennlighet</label></li>
+<li><label><input type="checkbox" checked="" />Tilpasset målgruppen og
+budskapet</label></li>
+<li><label><input type="checkbox" checked="" />Fulgt lover og regler,
+tenkt på hva som er rett og galt</label></li>
+</ul>
+<h2 id="logg">Logg</h2>
+<h3 id="uke-15">Uke 15</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Monday</td>
+<td>Re-started my task and started planning what to do this week.</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>Made a mood board.</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td>Started learning how to use Figma for making a prototype of the
+website.</td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td>Started making the prototype.</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="why-i-restarted-my-task">Why I restarted my task:</h4>
+<p>I restarted my task because I had no motivation for the helping
+website for Kuben students and it sounded a lot more exciting to start
+on the streaming website instead.</p>
+<h3 id="uke-16">Uke 16</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saturday</td>
+<td>Fixed recommended and watch later lists in code, mostly finished
+figma phone prototype</td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td>Added logo and tweaked design</td>
+</tr>
+<tr class="odd">
+<td>Monday</td>
+<td>Made figma prototype interactive</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>Made “Favorite button” interactive</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td>Looked for fonts for website</td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td>Other school stuff</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td>Feedback from teacher</td>
+</tr>
+</tbody>
+</table>
+<h3 id="uke-17">Uke 17</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saturday</td>
+<td>Read <a
+href="https://www.usit.uio.no/om/organisasjon/ffu/ux/blogg/2017/brukertest.html">about
+UX testing</a> Published website in my new azure subscription. Made a
+lot of changes to the repport.</td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td>Lagert ny JS fil for felles komponenterm, laget header, lagt inn
+logo, CSS farger fra prototype, skrevet rapport om moodboard, prototype,
+verktøy og målgruppe.</td>
+</tr>
+<tr class="odd">
+<td>Monday</td>
+<td>Laget brukertesting spørsmål og finpusset på figma. Laget promo for
+ny film på hjemmesiden. Stylet tittler og knapper.</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>Pause</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td>Laget animert slide show for featured films</td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td>Clean up av CSS og HTML for feature</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="uke-18">Uke 18</h3>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saturday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td>Lagde feature-new, gjore det sånn at man før autromatikt nye videoer
+nor de blir lagt inn.</td>
+</tr>
+<tr class="odd">
+<td>Monday</td>
+<td>Fikset tekst på featured og videoer under.</td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td>Brukertesting</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="uke-22">Uke 22</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saturday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Monday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td>Gjennomgikk koden</td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td>Skriver logg, og rapport til fagsamtale</td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td>Fagsamtale</td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="uke-..">Uke ..</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Day</th>
+<th>Log</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Saturday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Sunday</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Monday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Tuesday</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Wednesday</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Thursday</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Friday</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

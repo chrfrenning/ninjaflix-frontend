@@ -1,0 +1,1 @@
+docker run --rm --volume "$(pwd):/data" pandoc/latex README.md -s -o report.html
