@@ -183,6 +183,24 @@ addVideosToScrollContainer = function(videos, list) {
 
 Det finnes flere like funksjoner. De bruker document.createElement for å lage nytt innhold som legges i placeholderne med item.append. Placeholderne finner jeg med document.getElementById. 
 
+Slik ser koden i index.html ut når den lastes og før javaskriptene kjøres:
+
+```html
+<body>
+  <header id="header-placeholder"></header>
+
+  ...
+    
+    <h2>New films and series</h2>
+  <ul id="new-scroller" class="scroll-container"></ul>
+
+```
+
+Etter at JavaScriptet har kjørt, ser HTMLen slik ut:
+
+![Koden etter at JavaScriptet har kjørt](kode1.png)
+
+
 
 ### Animasjoner
 
