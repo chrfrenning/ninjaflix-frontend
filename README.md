@@ -131,7 +131,9 @@ TODO: Flytte ninjaflix.no pekeren til min egen Azure
 
 
 ## Verktøy
+
 Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse av hva jeg har brukt dem til og hvorfor.
+
 | Product | Description |
 |---------|-------------|
 | Figma  | Laget interaktiv prototype av produktet, tidlig brukertesting med figma sin mobil app. |
@@ -150,7 +152,8 @@ Jeg har laget en oversikt over verktøyene jeg har brukt, og en kort beskrivelse
 
 
 
-## Spærsmål til mentor
+## Spørsmål til mentor
+
 - Hvordan levere figma prosjektet? Ta screenshots og URL i rapporten?
 - Spør: Ludvik om nettverk
 
