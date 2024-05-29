@@ -92,7 +92,7 @@ Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. [Prosjektet kan ses
 
 ![Azure](azure.png)
 
-Jeg fikk hjelp til å publisere nettstedet på Azure websites. [Prosjektet kan testes her.](https://white-river-006cdb910.5.azurestaticapps.net) Vi kjøpte også domene Ninjaflix.no på Domeneshop. 
+Jeg fikk hjelp til å publisere nettstedet på Azure websites. [Prosjektet kan testes her.](https://mango-sand-0dd272f10.5.azurestaticapps.net/) Vi kjøpte også domene Ninjaflix.no på Domeneshop. 
 
 Når jeg gjør endringer i koden og pusher til GitHub så oppdateres nettstedet automatiskt på grunn av GitHub actions.
 
