@@ -41,12 +41,7 @@ Mine læringsmål for dette prosjektet er:
 
 ## Planlegging
 
-Hvordan har det gått hittil
-Starter på nytt med ny oppgave
-Veiledning til prosjektledelse
-Min plan for arbeidet er:
-Hva er planen for animasjoner
-
+Jeg startet på oppgaven om informasjonsside om Kuben. Jeg ble sittende fast og syntes det var vanskelig å lage innhold til siden. De første ukene fikk jeg ikke gjort så veldig mye. Jeg valgte å endre oppgave til streamng nettsted for da kunne jeg laste ned innhold som jeg er inntersert i fra YouTube. Jeg fikk også mere hjelp hjemme til prosjekt styring og en backend prototype som gjorde det mulig å få litt kul funksjonalitet. Jeg skal fokusere på frontend. Jeg lager moodboard for målgruppen min og bytter fra Adobe XD til Figma for å lage prototype. Jeg skal implementere frontended med HTML, CSS og JavaScript. Jeg skal lage animasjoner i CSS og bruke fonter fra Adobe. 
 
 ## Om Ninjaflix
 
@@ -59,8 +54,6 @@ Ninjaflix skal bli en app og et nettsted for de som har lyst til å se på anime
 Jeg har tatt inspirasjon fra Netflix og YouTube. De som er kjent med disse appene skal  kunne enkelt kunne finne seg frem på ninjaflix. Farger, kontraster og grafikk er inspirert av anime og cosplay. 
 
 ## Prototype
-
-TODO: Finne en måte å se hva animeen heter på mobil.
 
 Jeg brukte figma til å lage en interaktiv prototype av appen. Jeg begynte først i Adobe XD, men bytett til figma fordi det føltes for meg at det ble enkldere å bruke. Noe jeg syntes er fint med figma er at det var enkelt å gjøre prototypen interaktiv og enklere å finne hjelpe videoer på youtube. Det ble enkelt å tweake på designet fordi man kan lage komponenter og når man endrer dem så oppdaterer alle kopier av den komponenten med en gang.
 
@@ -94,40 +87,24 @@ Desverre kunne jeg ikke legge inn video i figma uten å betale så i brukerteste
 
 #### Manuskript
 Takk for at du hjelper meg med oppgaven og vil være med på en brukertest. Ninjaflix er en app som lar deg streame anime. 
-1. Her er en prototype. Kan du finne en film og se på den?
-    
-    person:
 
-        1. Gjorde det raskt
-        2. gjode raskt 
-        3. --""--
-        4. Ja 
+|Spørsmål|Person 1|Person 2|Person 3|Person 4|Notater|
+|-|-|-|-|-|-|
+|Alder|15-20|15-20|15-20|20-30||
+|Anime entusiast|Ja|Ja|Nei|Nei||
+|Her er en prototype. Kan du finne en film og se på den?|Gjorde det raskt|Gjorde det raskt|Gjorde det raskt|Ja||
+|Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?|Gjorde det raskt|Fant ut av det uten hjelp|Fant ut av det uten hjelp|Ja||
+|Noen anbefaler en serie til deg. Kan du finne den?|De skroller og finner den, eller de tenker at de kan søke.|De søker med en gang|De søker med en gang|Tenker ikke på å søke men blar gjennom de forskjellige tittlene for å finne den|Kanskje gjøre søkefunksjonen enklere å finne|
 
-2. Tenk deg at du finner en interessant serie men ikke har tid til å se på den nå. Hva gjør du da?
-    
-    person:
 
-        1.Gjorde det raskt
-        2. Fant ut av det uten hjelp
-        3. --""--
-        4. Ja
+#### Konklusjon 
 
-3. Noen anbefaler en serie til deg. Kan du finne den?
-    
-    person:
+Jeg gjorde brukertesting av prototypen i Figma med brødrene og bonusmoren min. De forsto konseptet og fant lett ut hvordan man navigerte. 
 
-        1. De skroller og finner den, eller de tenker at de kan søke.
-        2. De søker med en gang 
-        3. --""--
-        4. 
+Brukertesten over ble gjennomført på skolen med elever og en lærer med en tidlig utgave av appen. Appen ligner veldig på andre streaming nettsteder, og det har jeg gjort med vilje slik at all lett forstår den. Jeg har også blitt inspirert av Netflix sine farger, og ønsker at det skal være en gjennskjennings effekt.
 
-#### Resultater 
+Alle brukerne klarte fint å bruke appen, ingen trengte hjelp, men noen brukte litt tid på å finne ut hvordan de skulle gjøre en oppgave. 
 
-Jeg gjore brukertesting med tre personer. Nedenfor har jeg listet resultatene: 
-
-1. De alle fant frem raskt med spørsmålene 
-1.  
-1. 
 
 
 ## Backend 
