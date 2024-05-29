@@ -179,7 +179,7 @@ setButtonAnimationReaction = function(button, symbol) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    setButtonAnimationReaction( document.getElementById('favorite-button'), '❤️');
-    setButtonAnimationReaction( document.getElementById('like-button'), '👍');
-    setButtonAnimationReaction( document.getElementById('dislike-button'), '👎');
+    setButtonAnimationReaction( document.getElementById('favorite-button'), '&#x2764;');
+    setButtonAnimationReaction( document.getElementById('like-button'), '&#x1F44D;');
+    setButtonAnimationReaction( document.getElementById('dislike-button'), '&#x1F44E;');
 });
