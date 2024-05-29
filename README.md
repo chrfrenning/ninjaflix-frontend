@@ -3,21 +3,21 @@
 ## Vurderingskriterier
 
 - [x] Satt personlige læringsmål
-- [ ] Planlagt prosjektet
-- [ ] Dokumentert hvordan du jobbet med prosjektet
+- [x] Planlagt prosjektet
+- [x] Dokumentert hvordan du jobbet med prosjektet
 - [x] Brukt passende verktøy
 - [x] Forklart valg av verktøy
 - [ ] Brukt tilbakemeldinger for å forbedre arbeidet
-- [ ] Gjennomført brukertesting
-- [ ] Rapportert brukertesting
-- [ ] Bruker farger, grafikk og fotografi på en god måte
+- [x] Gjennomført brukertesting
+- [x] Rapportert brukertesting
+- [x] Bruker farger, grafikk og fotografi på en god måte
 - [x] Bruker Internett og AI
 
 ### Funksjonelle krav
 
 - [x] Passet på filstørrelser
 - [x] Valgt riktige filformater
-- [ ] Brukt nettverk for å gjøre prosjektet tilgjengelig
+- [-] Brukt nettverk for å gjøre prosjektet tilgjengelig
 - [ ] Ryddig og kommentert kode
 - [ ] Universell utforming (WCAG2 og UU tilsynet)
 - [ ] Bruker animasjoner
@@ -25,9 +25,9 @@
 
 ### Ikke funksjonelle krav
 
-- [ ] Fokusert på brukervennlighet
+- [x] Fokusert på brukervennlighet
 - [x] Tilpasset målgruppen og budskapet
-- [ ] Fulgt lover og regler, tenkt på hva som er rett og galt
+- [x] Fulgt lover og regler, tenkt på hva som er rett og galt
 
 ## Læringsmål
 
@@ -110,18 +110,22 @@ Alle brukerne klarte fint å bruke appen, ingen trengte hjelp, men noen brukte l
 ## Backend 
 Jeg ville fokusere på frontend kodingen og designet og trengte hjelp til backend. Jeg fikk hjelp hjemme til å lage en prototype for en tenkt backend, denne koden finnes i `common.js`. Vi lastet ned en del filmer fra YouTube, lagde thumbnails av dem og lagret dem i skyen. 
 
-TODO: Make heart function work
-TODO: Make fature work 
 TODO: Søk funksjon funker ikke 
 
 
 ## Nettverk
-Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. [Prosjektet kan ses her.](https://github.com/chrfrenning/ninjaflix-frontend)
+
+![Koden i GitHub](github.png)
+
+Jeg brukte GitHub som kildekontroll gjennom hele prosjektet. [Prosjektet kan ses her.](https://github.com/lolrandomthings/ninjaflix-frontend)
+
+![Azure](azure.png)
 
 Jeg fikk hjelp til å publisere nettstedet på Azure websites. [Prosjektet kan testes her.](https://ninjaflix.no/) Vi kjøpte også domene Ninjaflix.no på Domeneshop. 
 
-TODO: publisere på skolens nettverk.
+Når jeg gjør endringer i koden og pusher til GitHub så oppdateres nettstedet automatiskt på grunn av GitHub actions.
 
+TODO: publisere på skolens nettverk.
 TODO: Flytte ninjaflix.no pekeren til min egen Azure
 
 
@@ -198,15 +202,15 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Thursday | Brukertesting |
 | Friday   |  |
 
-### Uke 19
+### Uke 22
 | Day      | Log                                      |
 |----------|------------------------------------------|
 | Saturday |  |
 | Sunday   |  |
 | Monday   |  |
-| Tuesday  |  |
-| Wednesday|  |
-| Thursday |  |
+| Tuesday  | Gjennomgikk koden |
+| Wednesday| Skriver logg, og rapport til fagsamtale |
+| Thursday | Fagsamtale |
 | Friday   |  |
 
 
