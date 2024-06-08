@@ -41,9 +41,13 @@ addVideosToScrollContainer = function(videos, list) {
       };
     })(video);
 
+    var videoLink = document.createElement('a');
+    videoLink.href = 'watch.html?id=' + video.id;
+    videoItem.append(videoLink);
+
     var videoTitle = document.createElement('span');
     videoTitle.innerText = video.title;
-    videoItem.append(videoTitle);
+    videoLink.append(videoTitle);
 
     list.append(videoItem);
   }}

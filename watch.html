@@ -21,21 +21,21 @@
     <div id="video-container"></div>
 
     <div id="reactions-container">
-        <button id="like-button" onclick="likeVideo()"><i class="fa-solid fa-thumbs-up"></i>(<span
+        <button id="like-button" onclick="likeVideo()" aria-label="Like button"><i class="fa-solid fa-thumbs-up"></i>(<span
                 id="like-count"></span>)</button>
-        <button id="dislike-button" onclick="dislikeVideo()"><i class="fa-solid fa-thumbs-down"></i>(<span
+        <button id="dislike-button" onclick="dislikeVideo()" aria-label="Dislike button"><i class="fa-solid fa-thumbs-down"></i>(<span
                 id="dislike-count"></span>)</button>
-        <button id="favorite-button" onclick="favoriteVideo()"><i id="favorite-icon" class="fa-heart"></i></button>
-        <button id="bookmark-button" onclick="bookmarkVideo()"><i id="bookmark-icon"
+        <button id="favorite-button" onclick="favoriteVideo()" aria-label="Favorite button"><i id="favorite-icon" class="fa-heart"></i></button>
+        <button id="bookmark-button" onclick="bookmarkVideo()" aria-label="Watch later button"><i id="bookmark-icon"
                 class="fa-regular fa-bookmark"></i></button>
     </div>
    
-    <div>
+    <div role="region" aria-label="Recommended">
         <h2>Recommended</h2>
         <ul id="video-list-recommended" class="video-list"></ul>
     </div>
 
-    <div>
+    <div role="region" aria-label="Watch later">
         <h2>Watch later</h2>
         <ul id="video-list-saved" class="video-list"></ul>
     </div>
