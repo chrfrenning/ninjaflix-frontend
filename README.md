@@ -208,7 +208,7 @@ Det har vert nyttig å skrive logg. Jeg har blitt bedre på å spørre og ta imo
 - [x] Dokumentert hvordan du jobbet med prosjektet
 - [x] Brukt passende verktøy
 - [x] Forklart valg av verktøy
-- [-] Brukt tilbakemeldinger for å forbedre arbeidet
+- [x] Brukt tilbakemeldinger for å forbedre arbeidet
 - [x] Gjennomført brukertesting
 - [x] Rapportert brukertesting
 - [x] Bruker farger, grafikk og fotografi på en god måte
@@ -218,9 +218,9 @@ Det har vert nyttig å skrive logg. Jeg har blitt bedre på å spørre og ta imo
 
 - [x] Passet på filstørrelser
 - [x] Valgt riktige filformater
-- [-] Brukt nettverk for å gjøre prosjektet tilgjengelig
+- [x] Brukt nettverk for å gjøre prosjektet tilgjengelig
 - [x] Ryddig og kommentert kode
-- [ ] Universell utforming (WCAG2 og UU tilsynet)
+- [x] Universell utforming (WCAG2 og UU tilsynet)
 - [x] Bruker animasjoner
 - [x] Bruker fonter
 
