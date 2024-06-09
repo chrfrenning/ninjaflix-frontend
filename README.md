@@ -290,11 +290,11 @@ I restarted my task because I had no motivation for the helping website for Kube
 
 
 
-### Uke ..
+### Uke 24
 | Day      | Log                                      |
 |----------|------------------------------------------|
-| Saturday |  |
-| Sunday   |  |
+| Saturday | Alt tekster og aria regions og labels og testet med Microsoft narrator |
+| Sunday   | Flyttet tekst under thumbnail |
 | Monday   |  |
 | Tuesday  |  |
 | Wednesday|  |

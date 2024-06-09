@@ -34,19 +34,26 @@ addVideosToScrollContainer = function(videos, list) {
     var video = videos[i];
 
     var videoItem = document.createElement('li');
-    videoItem.style.backgroundImage = `url(${baseUrl}thumbnails/${video.id}.jpg)`;
-    videoItem.onclick = (function(video) {
-      return function() {
-        window.location.href = 'watch.html?id=' + video.id;
-      };
-    })(video);
+
+    videoItem.className = 'video-list-item';
 
     var videoLink = document.createElement('a');
     videoLink.href = 'watch.html?id=' + video.id;
+    videoLink.ariaLabel = video.title;
     videoItem.append(videoLink);
 
-    var videoTitle = document.createElement('span');
-    videoTitle.innerText = video.title;
+    var videoThumbnail = document.createElement('img');
+    videoThumbnail.src = `${baseUrl}thumbnails/${video.id}.jpg`;
+    videoLink.append(videoThumbnail);
+
+    var title = video.title;
+    if (title.length > 20) {
+      title = title.substring(0, 20) + '...';
+    }
+
+    var videoTitle = document.createElement('p');
+    videoTitle.innerText = title;
+    videoTitle.title = video.title;
     videoLink.append(videoTitle);
 
     list.append(videoItem);
