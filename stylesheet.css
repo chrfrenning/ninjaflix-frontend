@@ -88,6 +88,49 @@ input {
     margin-top: 10px;
 } */
 
+#search-dropdown {
+    background: #2B2B2B;
+    position: absolute;
+    z-index: 1;
+    width: 190px;
+    top: 100%;
+    right: 0;  
+}
+
+#search-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    padding-left: 8px;
+}
+
+#search-dropdown ul li {
+  padding: 0px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#search-dropdown ul li a {
+  display: flex;
+  align-items: center;
+}
+
+#search-dropdown ul li a img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#search-dropdown ul li a span {
+   font-size: smaller;
+   display: inline-block;
+   max-width: 100px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+  }
+
 /* index.html */
 
 .video-list {
