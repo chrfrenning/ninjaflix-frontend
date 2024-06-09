@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
             featuredVideos = videos.filter(video => video.featured === true);
             addVideosToFeaturedSlides(featuredVideos);
             showSlides(slideIndex);
-            setInterval(autoSlide, 5000);
+            setInterval(autoSlide, 12000);
         });
 
         listBookmarkedVideos().then(function(videos) {
@@ -72,6 +72,11 @@ addVideosToFeaturedSlides = function(videos) {
     if ( i == 0 )
       slide.className += ' active';
     slide.style.backgroundImage = `url(${baseUrl}thumbnails/${video.id}.jpg)`;
+    slide.onclick = (function(video) {
+      return function() {
+        window.location.href = 'watch.html?id=' + video.id;
+      }
+    })(video);
 
     var slideTextContainer = document.createElement('div');
     slideTextContainer.className = 'overlay-text';

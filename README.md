@@ -294,7 +294,7 @@ I restarted my task because I had no motivation for the helping website for Kube
 | Day      | Log                                      |
 |----------|------------------------------------------|
 | Saturday | Alt tekster og aria regions og labels og testet med Microsoft narrator |
-| Sunday   | Flyttet tekst under thumbnail |
+| Sunday   | Flyttet tekst under thumbnail, tilpasset til pc og laget linker på features. |
 | Monday   |  |
 | Tuesday  |  |
 | Wednesday|  |

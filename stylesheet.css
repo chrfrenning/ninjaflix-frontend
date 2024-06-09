@@ -114,13 +114,20 @@ input {
    position: relative;
    max-width: 100%;
    width: 100%;
-   height: 230px;
+   height: 600px;
+}
+
+@media (max-width: 600px) {
+  #feature-container {
+      height: 250px;
+  }
 }
 
 #feature-new {
    max-width: 100%;
    width: 100%;
-   height: 200px;
+   height: 100%;
+   
 }
 
 #feature-new img {
@@ -129,7 +136,7 @@ input {
     object-fit: cover;
     display: none;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-size: cover;
     background-position: center
 }
@@ -139,19 +146,24 @@ input {
     top: -10;
     left: 50%;
     width: 50%;
-    height: 200px;
-    margin-bottom: 50%;
+    height: 100%;
     background: rgb(0, 0, 0, 0.3); 
     backdrop-filter: blur(10px);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .overlay-text h4 {
-    position: relative;
-    font-size: -10em;
     text-align: center;
-    margin-top: 0px;
-    margin-bottom: 50%; 
-    margin-left: 5px;
+    margin: 0;
+    font-size: 2em;
+}
+
+@media (max-width: 600px) {
+  .overlay-text h4 {
+    font-size: 1em;
+}
 }
 
 /* Slideshow container */
@@ -165,7 +177,7 @@ input {
   .mySlides {
     display: none;
     width: 100%;
-    height: 200px;
+    height: 100%;
     background-size: cover;
     background-position: center;
   }
@@ -257,17 +269,35 @@ input {
 
 /* horisontal scroll list */
 
-.scroll-container {
-  display: flex;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  padding: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 20px;
-  padding: 0;
-  width: 100%;
-  height: 225px;
+@media (pointer: coarse) {
+  .scroll-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding: 0;
+    width: 100%;
+    height: 225px;
+  }
+}
+
+@media (pointer: fine) {
+  .scroll-container {
+    max-width: 800px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+
+    
+  }
 }
 
 .scroll-container li {
@@ -276,6 +306,7 @@ input {
   width: 100px;
   height: 225px;
   min-width: 100px;
+  min-height: 225px;
   margin-left: 10px;
   background-size: cover;
 }
@@ -289,9 +320,10 @@ input {
 .scroll-container li p {
   border: 0cm;
   font-size: 0.9em;
-  height: 60px;
+  height: 75px;
   margin-top: 0;
   width: 100px;
+  min-height: 75px;
 }
 
 
